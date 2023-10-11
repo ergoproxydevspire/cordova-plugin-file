@@ -28,6 +28,8 @@
  * size {Number} size of the file in bytes
  */
 
+window['OriginalFileApi'] = window.File;
+
 const File = function (name, localURL, type, lastModifiedDate, size) {
     this.name = name || '';
     this.localURL = localURL || null;
